@@ -1,0 +1,253 @@
+/* font roboto*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('../fonts/roboto.woff2') format('woff2'),
+       url('../fonts/roboto.woff') format('woff');
+       font-display: swap;
+
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: bold;
+  font-weight: 700;
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('../fonts/robotobold.woff2') format('woff2'),
+       url('../fonts/robotobold.woff') format('woff');
+       font-display: swap;
+}
+/*color*/
+:root{
+  --background-grey: #EEEEEE;
+  --basic-black: #000000;
+  --background-dack-grey: #888888;
+  --button-red: #FB565A;
+  --button-green: #00CA74;
+  --button-yellow: #EFC849;
+  --button-hover-red: #E74246;
+  --button-hover-green: #00BC6C;
+  --button-hover-yellow: #EAB534;
+  --button-push-red: #D7373B;
+  --button-push-green: #00AA62;
+  --button-push-yellow: #E5A722;
+  --white: #FFFFFF;
+  --black-text:#283136;
+}
+/*Global*/
+body{
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height:24px;
+  margin: 0 auto;
+  padding: 0;
+  width: 1440px;                /*min для центрирования? */
+                                /* в макете 1440, почему отступы по 10px */
+  background-color: var(--white);
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.body-page a{
+  text-decoration: none;
+}
+
+/*Main navigation*/
+.main-navigation a{
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 30px;
+  color:var(--black-text);
+  color: var(--basic-black);
+}
+
+.main-navigation-wrapper {
+  background-color: var(--background-grey);
+}
+
+.site-navigation{
+  list-style: none;
+}
+
+/*User navigation*/
+.site-navigation a:hover,
+.site-navigation a:hover,
+.conteiner-busket a:hover{
+  color:var(--button-red);
+}
+
+.site-navigation a:active,
+.conteiner-busket a:active{
+  color:var(--background-dack-grey);
+}
+
+/* Slides*/
+
+.slides{
+  background-color: var(--background-grey);
+}
+
+.caption-slide{
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color:var(--basic-black);
+}
+
+/*Service*/
+.service-list{
+  list-style: none;
+}
+
+.caption-service{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color:var(--basic-black);
+  text-transform: uppercase;
+}
+
+/*About us*/
+
+.about-us{
+  color:var(--basic-black);
+}
+
+.about-us-wrapper h3{
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.about-us-wrapper h4{
+  font-weight:bold;
+  text-transform: uppercase;
+}
+
+.percent dt{
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
+}
+
+/*Company*/
+
+.list-company{
+  list-style: none;
+}
+
+/*Footer*/
+.footer-caption{
+font-weight: bold;
+font-size: 18px;
+line-height: 30px;
+}
+
+.footer-adress,
+.contakt-phone{
+  line-height: 18px;
+  color: #666666;
+}
+
+.social-list{
+  list-style: none;
+}
+
+.footer-social h2{
+font-weight: bold;
+font-size: 36px;
+line-height: 36px;
+color:var(--basic-black);
+}
+
+.footer-social p{
+font-size: 16px;
+line-height: 22px;
+align-items: center;
+color:#444444;
+}
+/*Buttons*/
+
+.button {
+  font: inherit;
+  font-weight: 500;
+  line-height: 18px;
+  color:var(--white);
+  text-transform:uppercase;
+  text-align: center;
+  vertical-align: middle;
+  background-color: var(--button-red);
+  border: none;
+}
+
+.app-button{
+  background-color: var(--button-green);
+}
+
+.presentation-button{
+  background-color: var(--button-yellow);
+}
+
+
+/*User buttons*/
+
+.slide-button:hover,
+.site-button:hover{
+    background-color: var(--button-hover-red);
+}
+
+.slide-button:active,
+.site-button:active{
+    background-color: var(--button-push-red);
+}
+
+.app-button:hover{
+  background-color: var(--button-hover-green);
+}
+
+.app-button:active{
+  background-color: var(--button-push-green);
+}
+.presentation-button:hover{
+  background-color: var(--button-hover-yellow);
+}
+
+.presentation-button:active{
+  background-color: var(--button-push-yellow);
+}
+
+/*Modal window*/
+
+.modal-contakt h2{
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 53px;
+  color:var(--basic-black);
+}
+
+.fill-form p{
+  font-weight: bold;
+  line-height: 18px;
+  color:var(--basic-black);
+}
+
+.modal-field{
+  border: solid 2px #D7DCDE;
+  border-radius: 3px;
+}
+
+.user-name:hover{
+  border-color: #B4B9BB;
+}
+
+.user-name:focus{
+  border-color: var(--basic-black);
+}
+/*no valid value*/
+/*.user-name:    {
+  border-color:var(--button-hover-red);
+}*/
