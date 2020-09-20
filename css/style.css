@@ -7,8 +7,8 @@
        url('../fonts/roboto.woff2') format('woff2'),
        url('../fonts/roboto.woff') format('woff');
        font-display: swap;
-
 }
+
 @font-face {
   font-family: 'Roboto';
   font-style: bold;
@@ -17,6 +17,16 @@
        url('../fonts/robotobold.woff2') format('woff2'),
        url('../fonts/robotobold.woff') format('woff');
        font-display: swap;
+}
+
+@font-face {
+ font-family: 'Roboto';
+ font-style: medium;
+ font-weight: 500;
+ src: local('Roboto'), local('Roboto-Regular'),
+      url('../fonts/robotomedium.woff2') format('woff2'),
+      url('../fonts/robotomedium.woff') format('woff');
+      font-display: swap;
 }
 /*color*/
 :root{
@@ -38,8 +48,6 @@
 /*Global*/
 body{
   font-family: "Roboto", Arial, sans-serif;
-  font-size: 16px;
-  line-height:24px;
   margin: 0 auto;
   padding: 0;
   width: 1440px;                /*min для центрирования? */
@@ -52,8 +60,31 @@ img{
   height: auto;
 }
 
-.body-page a{
+.visually-hidden{
+  display: none;
+}
+
+.body-page{
+  font-size: 16px;
+  line-height:24px;
+}
+
+.body-inner{
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.body-page a,
+.body-inner a{
   text-decoration: none;
+}
+
+.site-navigation,
+.service-list,
+.list-company,
+.social-list,
+.list-site{
+  list-style: none;
 }
 
 /*Main navigation*/
@@ -67,10 +98,6 @@ img{
 
 .main-navigation-wrapper {
   background-color: var(--background-grey);
-}
-
-.site-navigation{
-  list-style: none;
 }
 
 /*User navigation*/
@@ -99,9 +126,6 @@ img{
 }
 
 /*Service*/
-.service-list{
-  list-style: none;
-}
 
 .caption-service{
   font-weight: bold;
@@ -136,9 +160,7 @@ img{
 
 /*Company*/
 
-.list-company{
-  list-style: none;
-}
+
 
 /*Footer*/
 .footer-caption{
@@ -151,10 +173,6 @@ line-height: 30px;
 .contakt-phone{
   line-height: 18px;
   color: #666666;
-}
-
-.social-list{
-  list-style: none;
 }
 
 .footer-social h2{
@@ -251,3 +269,6 @@ color:#444444;
 /*.user-name:    {
   border-color:var(--button-hover-red);
 }*/
+.modal-contakt{
+  display: none;
+}

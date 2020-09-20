@@ -3,32 +3,40 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин готовых шаблонов</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="body-inner">
 
     <header class="main-header">
-      <nav>
-        <a href="index.html">
+      <nav class="main-navigation">
+        <a href="index.html" class="main-header-logo">
           <img class="nerds-logo" src="img/nerds-logo.svg" width="159.87" height="65.02" alt="логотип Нёрдс" >
         </a>
-        <ul>
-          <li><a href="">студия</a></li>
-          <li><a href="">клиенты</a></li>
-          <li><a>магазин</a></li>
-          <li><a href="">контакты</a></li>
-        </ul>
-        <a href="">корзина</a>
+        <div class="main-navigation-wrapper">
+          <div class="container">
+            <ul class="site-navigation">
+              <li class="studio"><a href="">студия</a></li>
+              <li сlass="clients"><a href="">клиенты</a></li>
+              <li class="inner-catalog"><a>магазин</a></li>
+              <li><a href="">контакты</a></li>
+            </ul>
+          </div>
+          <div class="conteiner-busket">
+            <a class="busket" href="">корзина</a>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
-      <h1>Магазин готовых шаблонов</h1>
-      <section>
-        <h2>Фильтр товаров</h2>
+      <h1 class="inner-main-caption">Магазин готовых шаблонов</h1>
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
       </section>
 
       <section>
-        <h2>Готовые шаблоны</h2>
-        <ul>
+        <h2 class="visually-hidden">Готовые шаблоны</h2>
+        <ul class="list-site">
           <li>
             <a>
               <img src="files/Mask-site-1.png" alt="Sedona">
@@ -87,42 +95,38 @@
     </main>
     <footer class="main-footer">
 
-      <section>
+      <section class="map">
         <img src="img/map.jpg" width="1440" height="416" alt="Карта">
         <img src="img/map-marker.svg" width="231" height="190" alt="Указатель">
       </section>
 
-      <section>
+      <section class="contakt">
         <h2>Контакты</h2>
-        <h3>NЁRDS DESIGN STUDIO</h3>
-        <p>191186, Санкт-Петербург,<br>
+        <h3 class="footer-caption">NЁRDS DESIGN STUDIO</h3>
+        <p class="footer-adress">191186, Санкт-Петербург,<br>
           ул. Б. Конюшенная, д. 19/8</p>
-        <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+        <a class="contakt-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
         <br>
-        <a href="#">Напишите нам</a>
+        <a class="button footer-button" href="#">Напишите нам</a>
       </section>
 
-      <section>
+      <section class="footer-social">
         <h2>Давайте дружить!</h2>
         <p>Скидка 10% для друзей из социальных сетей.</p>
-        <ul>
+        <ul class="social-list">
           <li>
-            <a href="#">Вконтакте</a>
+            <a class="button-social" href="#">Вконтакте</a>
           </li>
           <li>
-            <a href="#">Фейсбук</a>
+            <a class="button-social" href="#">Фейсбук</a>
           </li>
           <li>
-            <a href="#">Инстаграм</a>
+            <a class="button-social" href="#">Инстаграм</a>
           </li>
         </ul>
       </section>
 
     </footer>
 
-      <section>
-        <h2>Напишите нам</h2>
- <!-- Здесь будет форма- Ваше имя: Ваш email: Текст письма: Отправить-->
-      </section>
   </body>
 </html>
