@@ -43,15 +43,23 @@
   --button-push-green: #00AA62;
   --button-push-yellow: #E5A722;
   --white: #FFFFFF;
-  --black-text:#283136;
+  --dark-text: #283136;
+  --grey-on-model: #666666;
+  --light-grey: #444444;
+  --grey-border: #D7DCDE;
+  --grey-hover:  #B4B9BB;
+
 }
+
 /*Global*/
 body{
   font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  color:var(--basic-black);
   margin: 0 auto;
   padding: 0;
-  width: 1440px;                /*min для центрирования? */
-                                /* в макете 1440, почему отступы по 10px */
+  min-width: 1460px;
   background-color: var(--white);
 }
 
@@ -65,12 +73,10 @@ img{
 }
 
 .body-page{
-  font-size: 16px;
   line-height:24px;
 }
 
 .body-inner{
-  font-size: 16px;
   font-weight: 400;
 }
 
@@ -79,11 +85,15 @@ img{
   text-decoration: none;
 }
 
+/*List-style none*/
 .site-navigation,
-.service-list,
+.list-service,
 .list-company,
-.social-list,
-.list-site{
+.list-social,
+.list-site,
+.list-radio,
+.list-checkbox,
+.list-pagination{
   list-style: none;
 }
 
@@ -92,8 +102,7 @@ img{
   text-transform: uppercase;
   font-weight: 500;
   line-height: 30px;
-  color:var(--black-text);
-  color: var(--basic-black);
+  color:inherit;
 }
 
 .main-navigation-wrapper {
@@ -114,7 +123,8 @@ img{
 
 /* Slides*/
 
-.slides{
+.slides,
+.inner-main-caption{
   background-color: var(--background-grey);
 }
 
@@ -122,7 +132,6 @@ img{
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
-  color:var(--basic-black);
 }
 
 /*Service*/
@@ -131,16 +140,10 @@ img{
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
-  color:var(--basic-black);
   text-transform: uppercase;
 }
 
 /*About us*/
-
-.about-us{
-  color:var(--basic-black);
-}
-
 .about-us-wrapper h3{
   font-weight: 500;
   font-size: 45px;
@@ -159,6 +162,122 @@ img{
 }
 
 /*Company*/
+
+/*catalog*/
+.inner-main-caption{
+  font-size: 55px;
+  line-height: 55px;
+}
+
+/*filters*/
+.caption-filter{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.filters ul{
+  line-height: 19px;
+}
+
+.button-filters{
+  color:inherit;
+  font-weight: 500;
+  font-size: inherit;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  background: var(--background-grey);
+  border-radius: 3px;
+  border: none;
+}
+
+.button-filters:hover{
+  background-color: #DFDFDF;
+  }
+
+.button-filters:active,
+.button-filters:focus{
+  background-color:#D5D5D5;
+  /*box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);*/
+  opacity: 0.3;
+  border:none;
+}
+
+
+/*Макеты сайтов*/
+.model h3{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.description{
+  line-height: 18px;
+  color:var(--grey-on-model);
+  text-align: center;
+}
+
+.button-price{
+  line-height: 18px;
+  color:var(--white);
+  text-transform: uppercase;
+  background-color:var(--button-red);
+  border-radius: 3px;
+  text-align: center;
+}
+
+.field-price{
+  background-color: var(--background-grey);
+}
+
+
+/*Pagination*/
+.pagination-item a{
+  color:inherit;
+  font-weight: 500;
+  font-size: inherit;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color:var(--background-grey);
+  border-radius: 3px;
+}
+
+.pagination-item a:hover{
+  background-color:#DFDFDF;
+}
+
+.pagination-item a:active,
+.pagination-item a:focus{
+  background-color:#D5D5D5;
+  opacity: 0.3;
+}
+
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:active,
+.pagination-item-current a:focus{
+  background-color: rgba(0, 0, 0, 0.0001);
+  border: 3px solid #DBDBDB;
+  border-radius:3px;
+}
+
+
+/*Text color all page*/
+.caption-slide-item,
+.caption-service-info,
+.about-us-text,
+.about-us-list,
+.caption-about-us-list,
+.percent dd,
+.value-range,
+.filters ul{
+  color:var(--dark-text);
+}
 
 
 
@@ -179,18 +298,17 @@ line-height: 30px;
 font-weight: bold;
 font-size: 36px;
 line-height: 36px;
-color:var(--basic-black);
 }
 
 .footer-social p{
 font-size: 16px;
 line-height: 22px;
-align-items: center;
-color:#444444;
+color:var(light-grey);
 }
-/*Buttons*/
 
-.button {
+/*Buttons*/
+.button,
+.button-price {
   font: inherit;
   font-weight: 500;
   line-height: 18px;
@@ -214,13 +332,16 @@ color:#444444;
 /*User buttons*/
 
 .slide-button:hover,
-.site-button:hover{
-    background-color: var(--button-hover-red);
+.site-button:hover,
+.button-price:hover{
+  background-color: var(--button-hover-red);
 }
 
 .slide-button:active,
-.site-button:active{
-    background-color: var(--button-push-red);
+.site-button:active,
+.button-price:active{
+  background-color: var(--button-push-red);
+  opacity: 0.3;
 }
 
 .app-button:hover{
@@ -239,36 +360,38 @@ color:#444444;
 }
 
 /*Modal window*/
+/*
+.modal-contakt{
+  display: none;
+}
+*/
 
 .modal-contakt h2{
   font-weight: bold;
   font-size: 45px;
   line-height: 53px;
-  color:var(--basic-black);
 }
 
 .fill-form p{
   font-weight: bold;
   line-height: 18px;
-  color:var(--basic-black);
 }
 
 .modal-field{
-  border: solid 2px #D7DCDE;
+  border: solid 2px var(--grey-border);
   border-radius: 3px;
+  /*задать цвет плейсхолдеру*/
 }
 
-.user-name:hover{
-  border-color: #B4B9BB;
+.modal-field:hover{
+  border-color:var(--grey-hover);
 }
 
-.user-name:focus{
-  border-color: var(--basic-black);
+.modal-field:focus{
+  border-color: red;/* var(--basic-black) не работает*/
 }
+
 /*no valid value*/
 /*.user-name:    {
   border-color:var(--button-hover-red);
 }*/
-.modal-contakt{
-  display: none;
-}

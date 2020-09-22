@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="body-page">
-
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
@@ -19,7 +18,7 @@
               <li class="studio"><a href="">студия</a></li>
               <li сlass="clients"><a href="">клиенты</a></li>
               <li class="catalog"><a href="catalog.html">магазин</a></li>
-              <li><a href="">контакты</a></li>
+              <li><a href="index.html #contact">контакты</a></li>
             </ul>
           </div>
           <div class="conteiner-busket">
@@ -54,7 +53,7 @@
 
       <section class="service">
         <h2 class="visually-hidden">Сервис</h2>
-        <ul class="service-list">
+        <ul class="list-service">
           <li class="service-list-item">
             <img src="img/illustration-1.jpg" width="300" height="146" alt="картинка">
             <h3 class="caption-service">Веб-сайты</h3>
@@ -81,8 +80,8 @@
           <div class="about-us-wrapper">
             <div class="order-container">
               <h3>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
-              <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-              <h4>Выполняем заказы на разработку:</h4>
+              <p class="about-us-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+              <h4 class="caption-about-us-list">Выполняем заказы на разработку:</h4>
               <ul class="about-us-list">
                 <li>Веб-сайтов любой сложности</li>
                 <li>Мобильных приложений для iOS и Android</li>
@@ -126,7 +125,7 @@
       </section>
 
       <section class="contakt">
-        <h2>Контакты</h2>
+        <h2 id="contact">Контакты</h2>
         <h3 class="footer-caption">NЁRDS DESIGN STUDIO</h3>
         <p class="footer-adress">191186, Санкт-Петербург,<br>
           ул. Б. Конюшенная, д. 19/8</p>
@@ -138,7 +137,7 @@
       <section class="footer-social">
         <h2>Давайте дружить!</h2>
         <p>Скидка 10% для друзей из социальных сетей.</p>
-        <ul class="social-list">
+        <ul class="list-social">
           <li>
             <a class="button-social" href="#">Вконтакте</a>
           </li>
@@ -158,7 +157,7 @@
         <form class="fill-form" action="https://echo.htmlacademy.ru" method="post">
           <p>
             <label for="user-name">Ваше имя:</label>
-            <input class="user-name modal-field" id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
+            <input class="modal-field" id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
           </p>
           <p>
             <label for="user-email">Ваш email:</label>
@@ -168,7 +167,7 @@
             <label for="letter">Текст письма:</label>
             <textarea class="modal-field" id="letter" name="letter" placeholder="В свободной форме" rows="8" cols="80"></textarea>
           </p>
-          <button class="button modal-send" type="submit" name="send">Отправить</button>
+          <button class="button modal-send" type="submit">Отправить</button>
           <button class="modal-close" type="button" name="close">close</button>
         </form>
       </section>
