@@ -11,7 +11,7 @@
 
 @font-face {
   font-family: 'Roboto';
-  font-style: bold;
+  font-style: normal;
   font-weight: 700;
   src: local('Roboto'), local('Roboto-Regular'),
        url('../fonts/robotobold.woff2') format('woff2'),
@@ -21,7 +21,7 @@
 
 @font-face {
  font-family: 'Roboto';
- font-style: medium;
+ font-style: normal;
  font-weight: 500;
  src: local('Roboto'), local('Roboto-Regular'),
       url('../fonts/robotomedium.woff2') format('woff2'),
@@ -68,6 +68,22 @@ img{
   height: auto;
 }
 
+/*Visually blocks*/
+
+/*.visually-hidden-slide1,
+.visually-hidden-slide2,
+.visually-hidden-slide3{
+  visibility: hidden;
+}
+
+.visually-price{
+  display:none;
+}
+
+.visually-modal{
+  display:none;
+}
+*/
 .visually-hidden{
   display: none;
 }
@@ -360,11 +376,6 @@ color:var(light-grey);
 }
 
 /*Modal window*/
-/*
-.modal-contakt{
-  display: none;
-}
-*/
 
 .modal-contakt h2{
   font-weight: bold;
