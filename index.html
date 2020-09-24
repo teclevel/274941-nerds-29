@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Интернет магазин Нёрдс</title>
@@ -12,45 +12,48 @@
         <a class="main-header-logo">
           <img class="nerds-logo" src="img/nerds-logo.svg" width="159.87" height="65.02" alt="логотип Нёрдс" >
         </a>
-        <div class="main-navigation-wrapper">
-          <div class="container">
-            <ul class="site-navigation">
-              <li class="studio"><a href="">студия</a></li>
-              <li сlass="clients"><a href="">клиенты</a></li>
-              <li class="catalog"><a href="catalog.html">магазин</a></li>
-              <li><a href="index.html #contact">контакты</a></li>
-            </ul>
-          </div>
-          <div class="conteiner-busket">
-            <a class="busket" href="">корзина</a>
-          </div>
+        <div class="container">
+          <ul class="site-navigation">
+            <li class="studio"><a href="">студия</a></li>
+            <li сlass="clients"><a href="">клиенты</a></li>
+            <li class="catalog"><a href="catalog.html">магазин</a></li>
+            <li><a href="index.html #contact">контакты</a></li>
+          </ul>
+        </div>
+        <div class="conteiner-busket">
+          <a class="busket" href="">корзина</a>
         </div>
       </nav>
     </header>
-
-    <main class="center">
+  <main class="center">
       <h1 class="visually-hidden">Интернет магазин "Nerds"</h1>
-
       <section class="slides">
         <h2 class="visually-hidden">Слайды</h2>
-        <div class="visually-hidden-slide1">
-          <img src="img/nerds-index-slide1.png" width="761" height="431" alt="slide1">
-          <h3 class="caption-slide">Долго, дорого, скрупулезно.</h3>
-          <p class="caption-slide-item">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+        <div class="slide visually-hidden-slide1">
+          <div class="coteiner-text-sliders">
+            <h3 class="caption-slide">Долго, дорого, скрупулезно.</h3>
+            <p class="caption-slide-item">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+            <a class="button slide-button" href="">Узнать больше</a>
+          </div>
+          <img class="position-slide" src="img/nerds-index-slide1.png" width="761" height="431" alt="slide1">
         </div>
-        <div class="visually-hidden-slide2">
+        <div class="slide visually-hidden-slide2">
+          <div class="coteiner-text-sliders">
+            <h3 class="caption-slide">Любим математику как никто другой</h3>
+            <p class="caption-slide-item">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+            <a class="button slide-button" href="">Узнать больше</a>
+          </div>
           <img src="img/nerds-index-slide2.png" width="761" height="431" alt="slide2">
-          <h3 class="caption-slide">Любим математику как никто другой</h3>
-          <p class="caption-slide-item">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
         </div>
-        <div class="visually-hidden-slide3">
+        <div class="slide visually-hidden-slide3">
+          <div class="coteiner-text-sliders">
+            <h3 class="caption-slide">Только ночь,только хардкор</h3>
+            <p class="caption-slide-item">Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+            <a class="button slide-button" href="">Узнать больше</a>
+          </div>
           <img src="img/nerds-index-slide3.png" width="761" height="431" alt="slide3">
-          <h3 class="caption-slide">Только ночь,только хардкор</h3>
-          <p class="caption-slide-item">Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
         </div>
-        <a class="button slide-button" href="">Узнать больше</a>
       </section>
-
       <section class="service">
         <h2 class="visually-hidden">Сервис</h2>
         <ul class="list-service">
@@ -74,7 +77,6 @@
           </li>
         </ul>
       </section>
-
       <section class="about-us">
         <h2 class="visually-hidden">О нас</h2>
           <div class="about-us-wrapper">
@@ -102,9 +104,8 @@
             </div>
         </div>
       </section>
-
       <section class="company">
-        <h2>Компании</h2>
+        <h2 class="visually-hidden">Компании</h2>
         <a href="https://htmlacademy.ru/intensive/htmlcss">
           <ul class="list-company">
             <li><img src="img/logo-4.svg" alt="HtmlAcademy"></li>
@@ -114,16 +115,12 @@
           </ul>
         </a>
       </section>
-
     </main>
-
     <footer class="main-footer">
-
       <section class="map">
         <img src="img/map.jpg" width="1440" height="416" alt="Карта">
         <img src="img/map-marker.svg" width="231" height="190" alt="Указатель">
       </section>
-
       <section class="contakt">
         <h2 id="contact">Контакты</h2>
         <h3 class="footer-caption">NЁRDS DESIGN STUDIO</h3>
@@ -133,10 +130,11 @@
         <br>
         <a class="button footer-button" href="#">Напишите нам</a>
       </section>
-
       <section class="footer-social">
-        <h2>Давайте дружить!</h2>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+        <div class="frendship">
+          <h2>Давайте дружить!</h2>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
         <ul class="list-social">
           <li>
             <a class="button-social" href="#">Вконтакте</a>
@@ -149,9 +147,7 @@
           </li>
         </ul>
       </section>
-
     </footer>
-
       <section class="visually-modal modal-contakt">
         <h2>Напишите нам</h2>
         <form class="fill-form" action="https://echo.htmlacademy.ru" method="post">
@@ -171,6 +167,5 @@
           <button class="modal-close" type="button" name="close">close</button>
         </form>
       </section>
-
   </body>
 </html>
