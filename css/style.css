@@ -134,7 +134,7 @@ img{
 .main-navigation{
   margin:0 145px;
   display: grid;
-  grid-template-columns:510px 440px 510px;
+  grid-template-columns:1fr 1fr 1fr;
 }
 .main-header-logo{
   margin-top: 49px;
@@ -152,8 +152,8 @@ img{
   margin-top: 100px;
   margin-left: 100px;
   pading 0;
-  outline: 1px solid blue;
-  outline-offset: -1px;
+  /*outline: 1px solid blue;
+  outline-offset: -1px;*/
 }
 
 .site-navigation{
@@ -161,8 +161,8 @@ img{
   justify-content:space-between;
   margin-top:100px;
   padding: 0;
-  outline: 1px solid blue;
-  outline-offset: -1px;
+  /*outline: 1px solid blue;
+  outline-offset: -1px;*/
 }
 
 .main-navigation a{
