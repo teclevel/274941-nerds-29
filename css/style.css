@@ -85,9 +85,11 @@ img{
 }*/
 
 .visually-modal{
-  position: absolute;
   display: none;
+}
 
+.visuslly-map-marker{
+  display:none;
 }
 
 .visually-hidden{
@@ -123,22 +125,14 @@ img{
   list-style: none;
 }
 
-/*Margin 0 auto  1460*/
-
-.main-header,
-.center,
-.main-footer{
-  width:1460px;
-  margin: 0 auto;
-}
-
 /*Main header*/
-.main-header {
+.main-header{
   background-color: var(--background-grey);
 }
 
 /*Main navigation*/
 .main-navigation{
+  margin:0 145px;
   display: grid;
   grid-template-columns:510px 440px 510px;
 }
@@ -155,13 +149,20 @@ img{
 }
 
 .conteiner-busket{
-/*  outline: 5px solid blue;
-  outline-offset: -5px;*/
+  margin-top: 100px;
+  margin-left: 100px;
+  pading 0;
+  outline: 1px solid blue;
+  outline-offset: -1px;
 }
 
 .site-navigation{
-  margin:0;
-  padding:0;
+  display:flex;
+  justify-content:space-between;
+  margin-top:100px;
+  padding: 0;
+  outline: 1px solid blue;
+  outline-offset: -1px;
 }
 
 .main-navigation a{
@@ -185,12 +186,17 @@ img{
 
 /*Main center*/
 /*Slides*/
+
+.slides-wrapper{
+  background-color: var(--background-grey);
+}
+
 .slide{
+  margin:0 145px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.slides,
 .inner-main-caption{
   background-color: var(--background-grey);
 }
@@ -210,6 +216,7 @@ img{
   text-transform: uppercase;
 }
 .list-service{
+  margin:0 145px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -234,6 +241,7 @@ img{
 }
 
 .about-us-wrapper{
+  margin: 0 145px;
   display:grid;
   grid-template-columns: 1fr 360px;
   gap:150px;
@@ -241,13 +249,17 @@ img{
 
 /*Company*/
 .list-company{
+  margin: 0 145px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 /*Footer*/
 .main-footer{
-  /*outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px;*/
+
+}
+
+.contact{
+  margin:0 145px;
 }
 
 .footer-caption{
@@ -257,7 +269,7 @@ line-height: 30px;
 }
 
 .footer-adress,
-.contakt-phone{
+.contact-phone{
   line-height: 18px;
   color: #666666;
 }
@@ -275,6 +287,7 @@ line-height: 30px;
 }
 
 .footer-social{
+  margin:0 145px;
   display: grid;
   grid-template-columns: 1fr 1000px;
 }
@@ -453,7 +466,7 @@ line-height: 30px;
 
 /*Modal window*/
 
-.modal-contakt h2{
+.modal-contact h2{
   font-weight: bold;
   font-size: 45px;
   line-height: 53px;
