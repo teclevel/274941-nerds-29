@@ -104,10 +104,6 @@ img{
   align-content: start;
 }
 
-.body-inner{
-  font-weight: 400;
-}
-
 .body-page a,
 .body-inner a{
   text-decoration: none;
@@ -137,10 +133,15 @@ img{
   grid-template-columns:1fr 1fr 1fr;
 }
 .main-header-logo{
-  margin-top: 49px;
-  margin-left: 150px;
-  /*outline: 5px solid blue;
-  outline-offset: -5px;*/
+  display: flex;
+  margin-top: 0px;
+  margin-left: 0px;
+/*  outline: 5px solid blue; */                   /*Скрыть*/
+/*  outline-offset: -5px;*/
+}
+
+.nerds-logo{
+  align-self: flex-end;
 }
 
 .container{
@@ -197,9 +198,6 @@ img{
   grid-template-columns: 1fr 1fr;
 }
 
-.inner-main-caption{
-  background-color: var(--background-grey);
-}
 
 .caption-slide{
   font-weight: 500;
@@ -258,6 +256,10 @@ img{
 
 }
 
+.map img:first-child{
+  width:100%;
+}
+
 .contact{
   margin:0 145px;
 }
@@ -295,13 +297,43 @@ line-height: 30px;
   padding:0;
 }
 
-/*catalog*/
+/*Catalog*/
+.body-inner{
+  font-weight: 400;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+.main-inner{
+  display: grid;
+  grid-template-columns: 450px 1fr;
+  align-content: start;
+  /*outline: 5px solid rgba(255, 0, 0, 0.7);            /*Скрыть*/
+/*  outline-offset: -5px;*/
+}
+
 .inner-main-caption{
+  background-color: var(--background-grey);
   font-size: 55px;
   line-height: 55px;
+  text-align: center;
+  margin:0;
+  padding:0;
+  grid-column: 1 / -1;
+/*  outline: 5px solid blue;                    /*Скрыть*/
+/*  outline-offset: -5px;*/
 }
 
 /*filters*/
+
+
+.filters{
+/*  outline: 5px solid rgba(0, 255, 0, 0.7);    /*Скрыть*/
+  /*outline-offset: -5px;*/
+}
+
 .caption-filter{
   font-weight: bold;
   font-size: 18px;
@@ -337,9 +369,15 @@ line-height: 30px;
   border:none;
 }
 
-
 /*Макеты сайтов*/
-.model h3{
+
+
+.models{
+/*  outline: 5px solid rgba(0, 0, 255, 0.7);      /*Скрыть*/
+/*  outline-offset: -5px;*/
+}
+
+.models h3{
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
@@ -365,7 +403,6 @@ line-height: 30px;
 .field-price{
   background-color: var(--background-grey);
 }
-
 
 /*Pagination*/
 .pagination-item a{

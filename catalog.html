@@ -9,25 +9,23 @@
   <body class="body-inner">
     <header class="main-header">
       <nav class="main-navigation">
-        <a href="index.html" class="main-header-logo">
+        <a class="main-header-logo">
           <img class="nerds-logo" src="img/nerds-logo.svg" width="159.87" height="65.02" alt="логотип Нёрдс" >
         </a>
-        <div class="main-navigation-wrapper">
-          <div class="container">
-            <ul class="site-navigation">
-              <li class="studio"><a href="">студия</a></li>
-              <li сlass="clients"><a href="">клиенты</a></li>
-              <li class="inner-catalog"><a>магазин</a></li>
-              <li><a href="index.html #contact">контакты</a></li>
-            </ul>
-          </div>
-          <div class="conteiner-busket">
-            <a class="busket" href="">корзина</a>
-          </div>
+        <div class="container">
+          <ul class="site-navigation">
+            <li class="studio"><a href="">студия</a></li>
+            <li сlass="clients"><a href="">клиенты</a></li>
+            <li class="catalog"><a href="catalog.html">магазин</a></li>
+            <li><a href="index.html #contact">контакты</a></li>
+          </ul>
+        </div>
+        <div class="conteiner-busket">
+          <a class="busket" href="">корзина</a>
         </div>
       </nav>
     </header>
-    <main>
+    <main class="main-inner">
       <h1 class="inner-main-caption">Магазин готовых шаблонов</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
@@ -94,7 +92,7 @@
         <input type="button" value="По названию">
       </section>
   -->
-      <section class="model">
+      <section class="models">
         <h2 class="visually-hidden">Готовые шаблоны</h2>
         <ul class="list-site">
           <li>
@@ -159,20 +157,18 @@
           </li>
         </ul>
         <ul class="list-pagination">
-      <li class="pagination-item pagination-item-current"><a>1</a></li>
-      <li class="pagination-item"><a href="#">2</a></li>
-      <li class="pagination-item"><a href="#">3</a></li>
-      <li class="pagination-item"><a href="#">Следующая</a></li>
-    </ul>
+          <li class="pagination-item pagination-item-current"><a>1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item"><a href="#">Следующая</a></li>
+        </ul>
       </section>
-
     </main>
     <footer class="main-footer">
-
       <section class="map">
         <img src="img/map.jpg" width="1440" height="416" alt="Карта">
         <img class="visuslly-map-marker"src="img/map-marker.svg" width="231" height="190" alt="Указатель">
-
+      </section>
       <section class="contact">
         <h2 class= visually-hidden >Контакты</h2>
         <h3 class="footer-caption" id="contact">NЁRDS DESIGN STUDIO</h3>
@@ -182,10 +178,11 @@
         <br>
         <a class="button footer-button" href="#">Напишите нам</a>
       </section>
-
       <section class="footer-social">
-        <h2>Давайте дружить!</h2>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+        <div class="frendship">
+          <h2>Давайте дружить!</h2>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
         <ul class="list-social">
           <li>
             <a class="button-social" href="#">Вконтакте</a>
@@ -198,7 +195,6 @@
           </li>
         </ul>
       </section>
-
     </footer>
 
   </body>
