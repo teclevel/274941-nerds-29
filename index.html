@@ -8,26 +8,25 @@
   </head>
   <body class="body-page">
     <header class="main-header">
-      <nav class="main-navigation">
+      <nav class="main-navigation container">
         <a class="main-header-logo">
           <img class="nerds-logo" src="img/nerds-logo.svg" width="159.87" height="65.02" alt="логотип Нёрдс" >
         </a>
-        <div class="container">
           <ul class="site-navigation">
             <li class="studio"><a href="">студия</a></li>
             <li сlass="clients"><a href="">клиенты</a></li>
             <li class="catalog"><a href="catalog.html">магазин</a></li>
             <li><a href="index.html #contact">контакты</a></li>
           </ul>
-        </div>
-        <div class="conteiner-busket">
+        <div class="container-busket">
           <a class="busket" href="">корзина</a>
         </div>
       </nav>
     </header>
   <main class="center">
+    <div class="slides-wrapper">
       <h1 class="visually-hidden">Интернет магазин "Nerds"</h1>
-      <section class="slides-wrapper">
+      <section class="container">
         <h2 class="visually-hidden">Слайды</h2>
         <div class="slide visually-hidden-slide1">
           <div class="coteiner-text-sliders">
@@ -53,8 +52,9 @@
           </div>
           <img src="img/nerds-index-slide3.png" width="761" height="431" alt="slide3">
         </div>-->
-      </section>
-      <section class="service">
+        </section>
+      </div>
+      <section class="service container">
         <h2 class="visually-hidden">Сервис</h2>
         <ul class="list-service">
           <li class="service-list-item">
@@ -77,7 +77,7 @@
           </li>
         </ul>
       </section>
-      <section class="about-us">
+      <section class="about-us container">
         <h2 class="visually-hidden">О нас</h2>
           <div class="about-us-wrapper">
             <div class="order-container">
@@ -90,21 +90,23 @@
                 <li>Слайдшоу и видео для корпоративных презентаций</li>
               </ul>
             </div>
-            <div class="progress-conteiner">
+            <div class="progress-container">
               <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Логотип">
-              <h4>с 2004 года Любим точность во всем:</h4>
-              <dl class="percent">
-                <dt>146<sup>%</sup></dt>
-                <dd>Уровень самоотдачи</dd>
-                <dt>100<sup>%</sup></dt>
-                <dd>Соблюдение сроков</dd>
-                <dt>50<sup>%</sup></dt>
-                <dd>Минимальная предоплата</dd>
-              </dl>
+              <div class="progress-content">
+                <h4>с 2004 года Любим точность во всем:</h4>
+                <dl class="percent">
+                  <dt>146<sup class="figur">%</sup></dt>
+                  <dd>Уровень<br> самоотдачи</dd>
+                  <dt>100<sup class="figur">%</sup></dt>
+                  <dd>Соблюдение<br> сроков</dd>
+                  <dt>50<sup class="figur">%</sup></dt>
+                  <dd>Минимальная<br> предоплата</dd>
+                </dl>
+              </div>
             </div>
         </div>
       </section>
-      <section class="company">
+      <section class="company container">
         <h2 class="visually-hidden">Компании</h2>
         <a href="https://htmlacademy.ru/intensive/htmlcss">
           <ul class="list-company">
@@ -130,23 +132,25 @@
         <br>
         <a class="button footer-button" href="#">Напишите нам</a>
       </section>
-      <section class="footer-social">
-        <div class="frendship">
-          <h2>Давайте дружить!</h2>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-        </div>
-        <ul class="list-social">
-          <li>
-            <a class="button-social" href="#">Вконтакте</a>
-          </li>
-          <li>
-            <a class="button-social" href="#">Фейсбук</a>
-          </li>
-          <li>
-            <a class="button-social" href="#">Инстаграм</a>
-          </li>
-        </ul>
-      </section>
+      <div class=" container">
+        <section class="footer-social">
+          <div class="frendship">
+            <h2>Давайте дружить, это выгодно!</h2>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+          <ul class="list-social">
+            <li>
+              <a class="button-social" href="#">Вконтакте</a>
+            </li>
+            <li>
+              <a class="button-social" href="#">Фейсбук</a>
+            </li>
+            <li>
+              <a class="button-social" href="#">Инстаграм</a>
+            </li>
+          </ul>
+        </section>
+      </div>
     </footer>
       <section class="visually-modal modal-contact">
         <h2>Напишите нам</h2>
