@@ -239,18 +239,35 @@ img{
 
 /*Service*/
 
+
 .caption-service{
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
 }
+/*Service on grids*/
 
-.list-service{
-  margin: 0;
+/*.list-service{
+  margin: 80px 0;
+  padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 100px;
+}*/
+
+/*Service on flex*/
+
+.list-service{
+  margin: 80px 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
+.list-service li{
+  width:300px;
+}
+
 
 /*About us*/
 .about-us-wrapper h3{
@@ -264,27 +281,52 @@ img{
   text-transform: uppercase;
 }
 
-.progress-container{
-  width:360px;
-  /* outline: 5px solid blue;                 /*Скрыть*/
-    /*outline-offset: -5px;*/
+/*About us on grid*/
+
+/*.about-us-wrapper{
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap:150px;
 }
 
-.progress-content{
-  padding:0 ;
+.progress-container{
+  width:360px;
+}
+*/
+
+/*About us on flex   dl on grids*/
+
+.about-us-wrapper{
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+/*  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;*/
+}
+
+.progress-container{
+  width:360px;
+  /*outline: 1px solid red;
+  outline-offset: -1px;*/
+}
+
+.order-container{
+  width:650px;
+
+  /*outline: 1px solid red;
+  outline-offset: -1px;*/
 }
 
 .progress-content dl{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
 }
 
 .progress-content dd{
   grid-row: 2 / 2;
   margin: 0;
 }
-
 
 .progress-content dt{
   font-weight: bold;
@@ -298,19 +340,22 @@ img{
   line-height: 40px;
 }
 
-.about-us-wrapper{
-  margin: 0;
-  display: grid;
-  grid-template-columns: 1fr 360px;
-  gap:150px;
-}
-
-/*Company*/
-.list-company{
+/*Company  on grids*/
+/*.list-company{
   margin: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+}*/
+
+/*Company  on  flex*/
+
+.list-company{
+  padding:0;
+  margin :45px 0;
+  display: flex;
+  justify-content: space-between;
 }
+
 /*Footer*/
 .main-footer{
 }
