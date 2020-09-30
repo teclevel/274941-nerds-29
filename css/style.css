@@ -138,8 +138,6 @@ img{
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  /*outline: 1px solid red;
-  outline-offset: -1px;*/
 }
 
 .main-navigation a{
@@ -149,15 +147,12 @@ img{
 .main-header-logo{
   margin:0;
   height:66px;
-  /*outline: 1px solid blue;
-  outline-offset: -1px;*/
 }
 
 .list-site-navigation{
   margin: 0;
   padding: 0;
   padding-bottom: 9px;
-  margin-left: 202px;
   min-width: 437px;
   display: flex;
   justify-content: space-between;
@@ -166,9 +161,11 @@ img{
 
 .container-busket{
     padding-bottom: 9px;
-    padding-left: 40px;
-    margin-left: auto;
+    padding-left: 44px;
+    /*outline: 1px solid black;
+    outline-offset: -1px;*/
   }
+
 
 .container{
   width:1200px;
