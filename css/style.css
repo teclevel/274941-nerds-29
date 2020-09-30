@@ -193,17 +193,12 @@ img{
 }
 
 /*Main center*/
-/*Slides*/
 
+/*Slides*/
+/*текст  h3 должен быть шире*/
 .slides-wrapper{
   background-color: var(--background-grey);
 }
-/*SLides on grid*/
-/* .slide{
-  margin: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-} */
 
 /*Slides on flex*/
 
@@ -216,10 +211,9 @@ img{
 }
 
 .container-text-sliders{
-  width: 538px;
+  /*width: 538px;*/
   pading:0;
   margin-right: -100px;
-
 }
 
 .block-slide{
@@ -233,6 +227,18 @@ img{
   font-size: 55px;
   line-height: 55px;
 }
+
+.caption-slide-item{
+  width: 416px;
+}
+
+.slide-button{
+  display:inline-block;
+  padding:16px 54px;
+  border-radius: 3px;
+  margin-top: 27px;
+}
+
 
 /*Service*/
 
