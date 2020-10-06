@@ -886,10 +886,14 @@ img{
 
 /*Modal window*/
 
+.visually-modal{
+  display: none;
+}
+
 .modal-contact{
   position:absolute;
   top:1750px;
-  right:400px;
+  left:30%;
   width: 960px;
   height: 590px;
   background-color: var(--white);
