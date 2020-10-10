@@ -15,7 +15,7 @@
           <ul class="list-site-navigation">
             <li class="studio"><a href="">студия</a></li>
             <li сlass="clients"><a href="">клиенты</a></li>
-            <li class="catalog"><a href="">магазин</a></li>
+            <li class="catalog page-current"><a href="">магазин</a></li>
             <li><a href="catalog.html #contact">контакты</a></li>
           </ul>
         <div class="container-busket">
@@ -28,55 +28,66 @@
       <div class="container  main-iner-container">
         <section class="filters">
           <h2 class="visually-hidden">Фильтр товаров</h2>
-          <form class="form-filters" action="https://echo.htmlacademy.ru/courses" method="post">
-            <fieldset>
-              <legend class="caption-filter">Стоимость:</legend>
-              <label for="price"></label>
-              <input type="range" name="price" id="price" min="1" max="15000" value="10000">
-              <p class="value-range">0т <span>1</span> до <span>15000</span></p>
+          <form class="form-filters" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="filter-item">
+              <legend>Стоимость:</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">
+                    от <input type="number" name="min-price" value="0">
+                  </label>
+                  <label class="max-price">
+                    до <input type="number" name="max-price" value="15000">
+                  </label>
+                </div>
+              </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="radio-controls">
               <legend class="caption-filter">Сетка:</legend>
               <ul class="list-radio">
-                <li>
-                  <label>
-                    <input type="radio" name="field-radio" value="Адаптивная" checked>Адаптивная
-                  </label>
+                <li class="filter-option filter-radio">
+                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="property-grid" value="Адаптивная" id="adaptive"  checked>
+                  <label for="adaptive">Адаптивная</span></label>
                 </li>
-                <li>
-                  <label>
-                    <input type="radio" name="field-radio" value="Фиксированная">Фиксированная
-                  </label>
+                <li class="filter-option filter-radio">
+                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="property-grid" value="Фиксированная" id="fixed" disabled>
+                  <label for="fixed">Фиксированная</span></label>
                 </li>
-                <li>
-                  <label>
-                    <input type="radio" name="field-radio"   value="Резиновая">Резиновая
-                  </label>
+                <li class="filter-option filter-radio">
+                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="property-grid" value="Резиновая" id="rubber">
+                  <label for="rubber">Резиновая</span></label>
                 </li>
               </ul>
             </fieldset>
             <fieldset>
               <legend class="caption-filter">Особенности:</legend>
               <ul class="list-checkbox">
-                <li>
-                  <input type="checkbox" id="field-checkbox-slider" name="slider"  checked>
-                  <label for="field-checkbox-slider">Слайдер</label>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="field-checkbox-slider" name="slider" checked disabled>
+                  <label for="field-checkbox-slider">Слайдер</span></label>
                 </li>
-                <li>
-                  <input type="checkbox" id="field-checkbox-advantage" name="advantage">
-                  <label for="field-checkbox-slider">Блок преимуществ</label>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="field-checkbox-advantage" name="advantage">
+                  <label for="field-checkbox-advantage">Блок преимуществ</span></label>
                 </li>
-                <li>
-                  <input type="checkbox" id="field-checkbox-news" name="news" checked>
-                  <label for="field-checkbox-news">Новости</label>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="field-checkbox-news" name="news" checked>
+                  <label for="field-checkbox-news">Новости</span></label>
                 </li>
-                <li>
-                  <input type="checkbox" id="field-checkbox-galery" name="galery">
-                  <label for="field-checkbox-galery">Галерея</label>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="field-checkbox-galery" name="galery">
+                  <label for="field-checkbox-galery">Галерея</span></label>
                 </li>
-                <li>
-                  <input type="checkbox" id="field-checkbox-busket" name="busket">
-                  <label for="field-checkbox-basket">Корзина</label>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="field-checkbox-busket" name="busket">
+                  <label for="field-checkbox-busket">Корзина</label>
                 </li>
               </ul>
             </fieldset>
@@ -86,88 +97,96 @@
         <section class="select">
           <h3>Сортировать:</h3>
           <ul class="list-select">
-            <li>По цене</li>
-            <li>По типу</li>
-            <li>По названию</li>
-            <li>A</li>
-            <li>V</li>
+            <li class="select-item select-for-price"><a>По цене</a></li>
+            <li class="select-item select-for-type"><a>По типу</a></li>
+            <li class="select-item select-for-name"><a>По названию</a></li>
+            <li class="select-item select-for-down">
+              <a class="icon-down">
+                <span class="visually-hidden">По убыванию</span>
+                <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5 10L0 0H11" fill="#231F20"/>
+                </svg>
+              </a>
+            </li>
+            <li class="select-item select-for-up">
+              <a class="icon-up">
+                <span class="visually-hidden">По возрастанию</span>
+                <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5 0L0 10H11L5.5 0Z" fill="#231F20"/>
+                </svg>
+              </a>
+            </li>
           </ul>
         </section>
         <section class="models">
           <h2 class="visually-hidden">Готовые шаблоны</h2>
-          <ul class="list-site">
+          <ul class="list-site-models">
             <li>
-              <p class="head-mask-site"></p>
-              <a>
-                <img src="files/Mask-site-1.png" alt="Sedona">
-                <div class="visually-price field-price">
-                  <h3>Sedona</h3>
-                  <p class="description">Информационный сайт<br>для туристов</p>
-                  <p class="button-price">9 900 ₽</p>
-                </div>
-              </a>
+              <div class="card-site card-site-hover">
+                  <img src="files/Mask-site-1.png" width="358" height="578" alt="">
+                  <div class="visually-price field-price">
+                    <h3>Sedona</h3>
+                    <p class="description">Информационный сайт<br>для туристов</p>
+                    <p class="button-price">9 900 ₽</p>
+                  </div>
+              </div>
             </li>
             <li>
-              <p class="head-mask-site"></p>
-              <a>
-                <img src="files/Mask-site-2.png" alt="Pink App">
+              <div class="card-site card-site-hover">
+                <img src="files/Mask-site-2.png" width="358" height="578" alt="">
                 <div class="visually-price field-price">
                   <h3>Pink App</h3>
                   <p class="description">Продуктовый лендинг<br>приложения для iOS и Android</p>
                   <p class="button-price">9 900 ₽</p>
                 </div>
-              </a>
+              </div>
             </li>
             <li>
-              <p class="head-mask-site"></p>
-              <a>
-                <img src="files/Mask-site-3.png" alt="Barbershop">
+              <div class="card-site card-site-hover">
+                <img src="files/Mask-site-3.png" width="358" height="578" alt="">
                 <div class="visually-price field-price">
                   <h3>Barbershop</h3>
                   <p class="description">Сайт салона красоты.<br>Для мужчин, да.</p>
                   <p class="button-price">9 900 ₽</p>
                 </div>
-              </a>
+              </div>
             </li>
             <li>
-              <p class="head-mask-site"></p>
-              <a>
-                <img src="files/Mask-site-4.png" alt="Mishka">
+              <div class="card-site card-site-hover">
+                <img src="files/Mask-site-4.png" width="358" height="578" alt="">
                 <div class="visually-price field-price">
                   <h3>Mishka</h3>
                   <p class="description">Интернет-магазин<br>вязаных игрушек</p>
                   <p class="button-price">9 900 ₽</p>
                 </div>
-              </a>
+              </div>
             </li>
             <li>
-              <p class="head-mask-site"></p>
-              <a>
-                <img src="files/Mask-site-5.png" alt="A plus">
+              <div class="card-site card-site-hover">
+                <img src="files/Mask-site-5.png" width="358" height="578" alt="">
                 <div class="visually-price field-price">
                   <h3>A plus</h3>
                   <p class="description">Лендинг курсов повышения<br>квалификации</p>
                   <p class="button-price">9 900 ₽</p>
                 </div>
-              </a>
+              </div>
             </li>
             <li>
-              <p class="head-mask-site"></p>
-              <a>
-                <img src="files/Mask-site-6.png" alt="Кваст">
+              <div class="card-site card-site-hover">
+                <img src="files/Mask-site-6.png" width="358" height="578" alt="">
                 <div class="visually-price field-price">
                   <h3>Кваст</h3></a>
                   <p class="description">Промо-сайт производителя<br>крафтового кваса</p>
                   <p class="button-price">9 900 ₽</p>
                 </div>
-              </a>
+              </div>
             </li>
           </ul>
           <ul class="list-pagination">
             <li class="pagination-item pagination-item-current"><a>1</a></li>
             <li class="pagination-item"><a href="#">2</a></li>
             <li class="pagination-item"><a href="#">3</a></li>
-            <li class="pagination-item"><a href="#">Следующая</a></li>
+            <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
           </ul>
         </section>
       </div>
@@ -175,7 +194,7 @@
     <footer class="main-footer">
       <section class="map">
         <img src="img/map.jpg" width="1440" height="416" alt="Карта">
-        <img class="visuslly-map-marker"src="img/map-marker.svg" width="231" height="190" alt="Указатель">
+        <img src="img/map-marker.svg" width="231" height="190" alt="Указатель">
       </section>
       <section class="contact">
         <h2 class= visually-hidden >Контакты</h2>
@@ -183,8 +202,7 @@
         <p class="footer-adress">191186, Санкт-Петербург,<br>
           ул. Б. Конюшенная, д. 19/8</p>
         <a class="contact-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-        <br>
-        <a class="button footer-button" href="#">Напишите нам</a>
+        <a class="button contact-button" href="#">Напишите нам</a>
       </section>
       <div class=" container">
         <section class="footer-social">
@@ -192,15 +210,30 @@
             <h2>Давайте дружить, это выгодно!</h2>
             <p>Скидка 10% для друзей из социальных сетей.</p>
           </div>
-          <ul class="list-social">
+          <ul>
             <li>
-              <a class="button-social" href="#">Вконтакте</a>
+              <a class="button-social" href="#">
+                <span class="visually-hidden">Вконтакте</span>
+                <svg width="27" height="15" viewBox="0 0 27 15">
+                  <path d="M16.6173 11.51C17.5843 11.201 18.8224 13.55 20.1404 14.449C21.1297 15.13 21.8873 14.983 21.8873 14.983L25.4003 14.933C25.4003 14.933 27.2362 14.821 26.3683 13.379C26.2965 13.259 25.8595 12.31 23.7536 10.357C21.5515 8.31404 21.8499 8.64504 24.5011 5.11304C26.1165 2.96004 26.7628 1.64504 26.5605 1.08504C26.3663 0.546037 25.1798 0.686037 25.1798 0.686037L21.2217 0.713037C20.8363 0.714037 20.5096 0.832037 20.3609 1.22804C20.3579 1.23204 19.7328 2.89404 18.8993 4.30704C17.1382 7.29604 16.4352 7.45504 16.1439 7.26804C15.4753 6.83504 15.6442 5.53104 15.6442 4.60404C15.6442 1.70704 16.0812 0.499037 14.7885 0.187037C14.3566 0.0830374 14.041 0.0150374 12.9394 0.00503741C11.5314 -0.0159626 10.3358 0.00503743 9.65806 0.334037C9.20793 0.557037 8.86301 1.04604 9.07239 1.07404C9.33539 1.10904 9.9251 1.23404 10.2407 1.66004C10.6463 2.21204 10.6342 3.44904 10.6342 3.44904C10.6342 3.44904 10.8658 6.86004 10.088 7.28304C9.55387 7.57304 8.82356 6.98104 7.25267 4.26704C6.45054 2.87904 5.84464 1.34504 5.84464 1.34504C5.84464 1.34504 5.7273 1.06004 5.51488 0.904037C5.262 0.719037 4.90797 0.660037 4.90797 0.660037L1.15119 0.684037C1.15119 0.684037 0.586767 0.700037 0.379405 0.946037C0.195309 1.16404 0.364233 1.61404 0.364233 1.61404C0.364233 1.61404 3.30674 8.49504 6.63868 11.961C9.69346 15.143 13.165 14.932 13.165 14.932H14.7379C14.7379 14.932 15.2123 14.878 15.4551 14.62C15.6817 14.38 15.6715 13.929 15.6715 13.929C15.6715 13.929 15.6402 11.82 16.6173 11.51Z" fill="white"/>
+                </svg>
+              </a>
             </li>
             <li>
-              <a class="button-social" href="#">Фейсбук</a>
+              <a class="button-social" href="#">
+                <span class="visually-hidden">Фейсбук</span>
+                <svg width="12" height="22" viewBox="0 0 12 22">
+                  <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
+                </svg>
+              </a>
             </li>
             <li>
-              <a class="button-social" href="#">Инстаграм</a>
+              <a class="button-social" href="#">
+                <span class="visually-hidden">Инстаграм</span>
+                <svg width="21" height="21" viewBox="0 0 21 21">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z" fill="white"/>
+                </svg>
+              </a>
             </li>
           </ul>
         </section>
