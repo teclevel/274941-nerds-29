@@ -889,19 +889,21 @@ background-repeat: no-repeat;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  opacity: 0.3;
 }
 
-.list-select li:hover{
+.select-item a{
+  color: inherit;
+  opacity: 0.3;
+  padding: 10px 5px;
+}
+
+.select-item a:hover{
   opacity:0.6;
 }
 
-.list-select li:active,{
+.select-item a:active,
+.select-item a.current-item{
   opacity:1;
-}
-
-.select-item{
-  padding: 10px 5px;
 }
 
 /*Макеты сайтов*/
