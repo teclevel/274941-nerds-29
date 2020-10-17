@@ -111,6 +111,7 @@ img{
 /*List-style none*/
 
 .list-site-navigation,
+.list-sliders,
 .list-service,
 .about-us-list,
 .list-company,
@@ -230,26 +231,26 @@ img{
 
 /*Slides*/
 
-.slides-wrapper{
+.slider-bar{
   background-color: var(--background-grey);
 }
 
-.slide{
-  min-height: 431px;
-  display: flex;
-  justify-content: flex-end;
+.slider-wrapper{
+  position:relative;
+  height: 431px;
+}
+
+.list-sliders{
+  margin:0;
+  padding:0;
 }
 
 .container-text-sliders{
   width: 538px;
   height: 431px;
-  padding:0;
-  margin-right: -141px;
-}
-
-.block-slide{
- width:760px;
- margin-right: 3px;
+  display: flex;
+  flex-direction:column;
+  align-items: flex-start;
 }
 
 .caption-slide{
@@ -257,19 +258,76 @@ img{
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
-  margin-top:78px;
-  margin-bottom: 27px;
+  margin-top: 78px;
+  margin-bottom: 11px;
 }
 
 .caption-slide-item{
   width: 416px;
-  margin-bottom: 51px;
+  margin-bottom: 39px;
+}
+
+.caption-slide-item.slide2,
+.caption-slide-item.slide3{
+  margin-top: 28px;
+  margin-bottom: 27px;
 }
 
 .slide-button{
-text-align: center;
+  text-align: center;
   padding:16px 55px 15px 54px;
   border-radius: 3px;
+}
+
+.block-slide{
+  display: block;
+  position:absolute;
+  bottom:0;
+  right:13px;
+  width:760px;
+}
+
+.control-slider{
+  position:absolute;
+  bottom:96px;
+  right: 546px;
+  width:88px;
+  height: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-slider{
+  position: relative;
+  padding: 0;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  background-color: #FFFFFF;
+  border-radius:50%;
+  border:none;
+  cursor: pointer;
+  z-index:20;
+}
+
+.button-slider-current::before{
+  content:"";
+  position:absolute;
+  bottom:5px;
+  right: 5px;
+  width: 8px;
+  height: 8px;
+  box-sizing: border-box;
+  border: 2px solid #C1C1C1;
+  border-radius: 50%;
+}
+
+.slide{
+  display:none;
+}
+
+.slide-current{
+  display:block;
 }
 
 /*Service*/
