@@ -214,7 +214,7 @@ img{
 }
 
 .main-iner-container{
-  display:grid;
+  display: grid;
   grid-template-columns: 400px auto;
   grid-template-rows: 133px auto;
 }
@@ -756,8 +756,11 @@ img{
 .form-filters fieldset{
   border:none;
   padding: 0;
-  margin: 0;
-  margin-top: 50px;
+  margin-left: 0;
+}
+
+.filter-item{
+  margin-top: 55px;
 }
 
 .filters ul{
@@ -795,7 +798,7 @@ img{
 
  .filter-item legend{
    width:100%;
-   margin:55px 0 48px;
+   margin-bottom: 48px;
    padding-left: 0;
    text-transform: uppercase;
    font-size: 18px;
@@ -827,7 +830,7 @@ img{
 }
 
 .bar{
-  width:60%;
+  width:64%;
   height: 2px;
   background-color: var(--button-green);
 }
@@ -835,7 +838,7 @@ img{
 .toggle{
   width: 4px;
   height: 4px;
-  border: solid 10px var(--white);
+  border: solid 8px var(--white);
   background-color: var(--grey-toggle);
   border-radius: 50%;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.15);
@@ -843,12 +846,12 @@ img{
 
 .toggle-min{
   position: absolute;
-  left:10%;
+  left:7%;
 }
 
 .toggle-max{
   position: absolute;
-  left:60%;
+  left:61%;
 }
 
 .price-controls{
@@ -868,16 +871,23 @@ img{
 }
 
 .price-controls input[type="number"]{
-  width:80px;
+  width:66px;
   height:38px;
   background-color: var(--background-grey);
   border:none;
   text-align: center;
   margin-top:14px;
+  margin-left:8px;
+  padding:0;
+  padding-left: 14px;
   border-radius: 3px;
 }
 
 /*Radio Checkbox kontrols*/
+
+.radio-controls{
+  margin-top:54px;
+}
 
 .caption-filter{
   font-weight: bold;
@@ -889,7 +899,7 @@ img{
 
 .filter-option{
   margin-bottom: 21px;
-  padding-left: 40px;
+  padding-left: 36px;
 }
 
 .filter-option label{
@@ -906,7 +916,7 @@ img{
   width:25px;
   height:25px;
   top:-3px;
-  left:-40px;
+  left:-36px;
   border: 4px solid var(--grey-dark);
   border-radius: 50%;
   opacity: 0.4;
@@ -918,10 +928,16 @@ img{
   width:9px;
   height:9px;
   top:5px;
-  left:-32px;
+  left:-28px;
   border-radius: 50%;
   background-color:var(--grey-dark);
   opacity: 0.4;
+}
+
+/*Checkbox kontrols*/
+.check-controls{
+  margin-top: 25px;
+  margin-bottom: 29px;
 }
 
 .filter-input-checkbox + label::before{
@@ -931,19 +947,24 @@ img{
   width:23px;
   height:23px;
   top:-2px;
-  left:-40px;
+  left:-36px;
   border: 2px solid var(--grey-dark);
-  border-radius: 2px;
+  border-radius: 3px;
   opacity: 0.4;
+}
+
+.filter-input-checkbox + label::before{
+  display:block;
 }
 
 .filter-input-checkbox:checked + label::after{
   position: absolute;
   content:"";
-  width:22px;
-  height:17px;
-  top:-1px;
+  width:26px;
+  height:23px;
+  top:-2px;
   left:-36px;
+  background-color:var(--white);
   background-image: url("../img/check.svg");
   background-repeat: no-repeat;
   opacity: 0.4;
@@ -964,11 +985,9 @@ img{
   opacity:0.3;
 }
 
-
 /*Select*/
 
 .select{
-  justify-content: space-between;
   grid-row-start: 1;
   grid-row-end: 2;
   grid-column-start: 2;
@@ -978,20 +997,33 @@ img{
 }
 
 .list-select{
-  width:360px;
+  min-width:360px;
   margin:0;
   padding:0;
   display:flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin-top: 9px;
 }
 
 .select h3{
-  margin:0;
+  margin-top:25px;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
+  margin-right:263px;
+}
+.select-for-price,
+.select-for-type{
+  margin-right:20px;
+}
+
+.select-for-name{
+  margin-right:41px;
+}
+
+.select-for-down{
+  margin-right:8px;
 }
 
 .list-select li{
@@ -1003,7 +1035,7 @@ img{
 .select-item a{
   color: inherit;
   opacity: 0.3;
-  padding: 10px 5px;
+  padding: 10px 3px;
 }
 
 .select-item a:hover{
@@ -1074,7 +1106,7 @@ img{
 }
 
 .visually-price{
-  display:block;
+  display:none;
 }
 
 .list-site-models li:nth-child(2n){
@@ -1106,16 +1138,16 @@ color: var(--button-red);
   color:var(--grey-on-model);
   text-align: center;
   margin-top: 13px;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .button-price{
   display:inline-block;
-  padding: 17px 72px 15px 72px;
+  padding: 17px 75px 15px 72px;
   margin-left: 80px;
+  margin-top: 0;
   border-radius: 3px;
 }
-
 
 /*Pagination*/
 
@@ -1124,8 +1156,13 @@ color: var(--button-red);
   min-height: 50px;
   display:flex;
   flex-wrap: wrap;
-  margin:25px 0 60px ;
+  margin:25px 0 49px ;
   padding:0;
+}
+
+.pagination-item{
+  margin-bottom: 10px;
+  margin-right:11px;
 }
 
 .pagination-item a{
@@ -1138,7 +1175,6 @@ color: var(--button-red);
   background-color:var(--background-grey);
   border-radius: 3px;
   padding: 17px 20px 15px;
-  margin-right: 11px;
 }
 
 .pagination-item-current a{
