@@ -584,16 +584,21 @@ img{
   width:1440px;
   margin:0 auto;
 }
-
-.adress-company img:first-of-type{
+.adress-company iframe{
   display: block;
-}
+  border:0;
 
-.adress-company img:nth-child(3){
+
+}
+/*.adress-company img:first-of-type{
+  display: block;
+}*/
+
+/*.adress-company img:nth-child(3){
   position:absolute;
   right: 387px;
   bottom: 140px;
-}
+}*/
 
 .contact{
   position:absolute;
