@@ -160,6 +160,7 @@ img{
 .main-header-logo{
   margin:0;
   height:66px;
+  z-index:20;
 }
 
 .logo-active:active{
@@ -188,7 +189,7 @@ img{
   content: "";
   position:absolute;
   left:0px;
-  bottom:-5px;
+  bottom:-6px;
   width:100%;
   height:2px;
   background-color: var(--button-red);
@@ -223,7 +224,10 @@ img{
 
 .list-site-navigation a:hover,
 .list-site-navigation a:hover,
-.container-busket a:hover{
+.container-busket a:hover,
+.list-site-navigation a:focus,
+.list-site-navigation a:focus,
+.container-busket a:focus{
   color:var(--button-red);
 }
 
@@ -721,7 +725,8 @@ img{
   opacity: 0.3;
 }
 
-.button-social:hover{
+.button-social:hover,
+.button-social:focus{
   background: linear-gradient(0deg, var(--button-hover-red), var(--button-hover-red)), var(--white);
 }
 
@@ -788,13 +793,13 @@ img{
   border: none;
 }
 
-.button-filters:hover{
+.button-filters:hover,
+.button-filters:focus{
   background-color: var(--light-grey-filter);
   border: none;
 }
 
-.button-filters:active,
-.button-filters:focus{
+.button-filters:active{
   background-color:var(--grey-active);
   opacity: 0.3;
 }
@@ -939,7 +944,6 @@ img{
   opacity: 0.4;
 }
 
-/*Checkbox kontrols*/
 .check-controls{
   margin-top: 25px;
   margin-bottom: 29px;
@@ -988,6 +992,11 @@ img{
 .filter-input:disabled + label{
   color:var(--dark-text);
   opacity:0.3;
+}
+
+.filter-input:focus + label::after,
+.filter-input:focus + label::before{
+  opacity:1;
 }
 
 /*Select*/
@@ -1048,6 +1057,7 @@ img{
 }
 
 .select-item a:active,
+.select-item a:focus,
 .select-item a.current-item{
   opacity:1;
 }
@@ -1108,9 +1118,6 @@ img{
   height: 231px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-}
-
-.visually-price{
   display:none;
 }
 
@@ -1167,7 +1174,7 @@ color: var(--button-red);
 
 .pagination-item{
   margin-bottom: 10px;
-  margin-right:11px;
+  margin-right:12px;
 }
 
 .pagination-item a{
