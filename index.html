@@ -143,8 +143,8 @@
       <div class="adress-company-wrapper">
         <section class="adress-company">
           <h2 class= visually-hidden>Контакты</h2>
-          <!--<img src="img/map.jpg" width="1440" height="416" alt="">-->
-          <!--<img src="img/map-marker.svg" width="231" height="190" alt="Указатель">-->
+          <img src="img/map.jpg" width="1440" height="416" alt="">
+          <img src="img/map-marker.svg" width="231" height="190" alt="Указатель">
           <div class="contact">
             <h3 class="footer-caption" id="contact">NЁRDS DESIGN STUDIO</h3>
             <p class="footer-adress">191186, Санкт-Петербург,<br>
@@ -191,24 +191,25 @@
         </section>
       </div>
     </footer>
-      <section class="visually-modal modal-contact">
+      <section class="modal-contact">
         <h2>Напишите нам</h2>
         <form class="fill-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="user-data name">
             <label for="user-name">Ваше имя:</label>
-            <input class="modal-field" id="user-name" type="text" name="user-name" pattern="[A-Za-zА-Яа-яЁё]" placeholder="Имя Фамилия">
+            <input class="modal-field user-name" id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
           </p>
           <p class="user-data email">
             <label for="user-email">Ваш email:</label>
-            <input class="modal-field" id="user-email" type="text" name="user-email" placeholder="email@example.com">
+            <input class="modal-field user-email" id="user-email" type="text" name="user-email" placeholder="email@example.com">
           </p>
           <p class="textarea">
             <label for="letter">Текст письма:</label>
-            <textarea class="modal-field" id="letter" name="letter" placeholder="В свободной форме" rows="4" cols="50"></textarea>
+            <textarea class="modal-field user-letter" id="letter" name="letter" placeholder="В свободной форме" rows="4" cols="50"></textarea>
           </p>
           <button class="button modal-send" type="submit">Отправить</button>
           <button class="modal-close" type="button" aria-label="Закрыть"></button>
         </form>
       </section>
+      <script src="js/modal.js"></script>
   </body>
 </html>

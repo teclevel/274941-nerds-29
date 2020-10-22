@@ -154,7 +154,7 @@ img{
 .main-navigation a,
 .container-busket a{
   color: inherit;
-  display:block;
+  display: block;
 }
 
 .main-header-logo{
@@ -592,17 +592,17 @@ img{
   display: block;
   border:0;
 
-
 }
-/*.adress-company img:first-of-type{
-  display: block;
-}*/
+.adress-company img:first-of-type{
+  display: none;
+}
 
-/*.adress-company img:nth-child(3){
+.adress-company img:nth-child(3){
   position:absolute;
   right: 387px;
   bottom: 140px;
-}*/
+  display:none;
+}
 
 .contact{
   position:absolute;
@@ -1281,11 +1281,8 @@ color: var(--button-red);
 
 /*Modal window*/
 
-.visually-modal{
-  display:none;
-}
-
 .modal-contact{
+  z-index: 100;
   position:fixed;
   top:0;
   right:0;
@@ -1296,6 +1293,14 @@ color: var(--button-red);
   height: 590px;
   background-color: var(--white);
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  display:none;
+}
+.modal-open{
+  display:block;
+  animation: bounce 0.6s;
+}
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .fill-form{
@@ -1404,6 +1409,47 @@ color: var(--button-red);
   border-color:var(--button-hover-red);
 }
 
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
 /*Скрытие элементов*/
 
 .visually-hidden {
