@@ -727,11 +727,11 @@ img{
 
 .button-social:hover,
 .button-social:focus{
-  background: linear-gradient(0deg, var(--button-hover-red), var(--button-hover-red)), var(--white);
+  background-color: var(--button-hover-red);
 }
 
 .button-social:active{
-  background: linear-gradient(0deg, var(--button-push-red), var(--button-push-red)), var(--white);
+  background-color: var(--button-push-red);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
