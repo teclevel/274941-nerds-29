@@ -29,6 +29,7 @@
       url("../fonts/robotomedium.woff") format("woff");
       font-display: swap;
 }
+
 /*color*/
 
 :root{
@@ -78,6 +79,10 @@ img{
   height: auto;
 }
 
+ul{
+  list-style: none;
+}
+
 .page {
   height: 100%;
 }
@@ -88,8 +93,6 @@ img{
   padding-left: 10px;
   padding-right: 10px;
 }
-
-/*Text color all page*/
 
 .caption-slide-item,
 .caption-service-info,
@@ -115,31 +118,13 @@ img{
   text-decoration: none;
 }
 
-/*List-style none*/
-
-.list-site-navigation,
-.list-sliders,
-.list-service,
-.about-us-list,
-.list-company,
-.footer-social ul,
-.list-site-models,
-.list-radio,
-.list-checkbox,
-.list-pagination,
-.list-select{
-  list-style: none;
-}
-
 /*Main header*/
 
 .main-header{
   background-color: var(--background-grey);
   text-transform: uppercase;
   line-height: 30px;
-  color:var(--basic-black);
   font-weight: 500;
-  font-size: 16px;
 }
 
 /*Main navigation*/
@@ -642,9 +627,14 @@ img{
   margin-top: 49px;
 }
 
+.contact-phone{
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
 .contact-button{
   margin:0;
-  margin-top: 37px;
+  margin-top: 19px;
   padding:17px 44px 15px;
   border-radius: 3px;
 }
@@ -660,10 +650,6 @@ img{
   margin-left: 50px;
   margin-right: 50px;
   text-align: left;
-}
-
-.contact-phone{
-  padding-top: 18px
 }
 
 .footer-adress{
@@ -793,31 +779,6 @@ img{
   padding: 0;
 }
 
-.button-filters{
-  width: 260px;
-  height:50px;
-  color:inherit;
-  font-weight: 500;
-  font-size: inherit;
-  line-height: 18px;
-  text-transform: uppercase;
-  text-align: center;
-  background: var(--background-grey);
-  border-radius: 3px;
-  border: none;
-}
-
-.button-filters:hover,
-.button-filters:focus{
-  background-color: var(--light-grey-filter);
-  border: none;
-}
-
-.button-filters:active{
-  background-color:var(--grey-active);
-  opacity: 0.3;
-}
-
 /*Range-controls*/
 
  .filter-item legend{
@@ -882,12 +843,9 @@ img{
   width:260px;
   display:flex;
   justify-content: space-between;
-  font-size: 16px;
   text-transform: uppercase;
   line-height: 22px;
-  font-weight: 400;
   color:var(--dark-text);
-  font-family: inherit;
 }
 
 .price-controls label{
@@ -960,7 +918,7 @@ img{
 
 .check-controls{
   margin-top: 25px;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
 }
 
 .filter-input-checkbox + label::before{
@@ -1013,6 +971,31 @@ img{
   opacity:1;
 }
 
+.button-filters{
+  width: 100%;
+  color:inherit;
+  font-weight: 500;
+  font-size: inherit;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  padding:16px 0;
+  background: var(--background-grey);
+  border-radius: 3px;
+  border: none;
+}
+
+.button-filters:hover,
+.button-filters:focus{
+  background-color: var(--light-grey-filter);
+  border: none;
+}
+
+.button-filters:active{
+  background-color:var(--grey-active);
+  opacity: 0.3;
+}
+
 /*Select*/
 
 .select{
@@ -1041,6 +1024,7 @@ img{
   text-transform: uppercase;
   margin-right:263px;
 }
+
 .select-for-price,
 .select-for-type{
   margin-right:20px;
@@ -1051,7 +1035,7 @@ img{
 }
 
 .select-for-down{
-  margin-right:8px;
+  margin-right:10px;
 }
 
 .list-select li{
@@ -1129,10 +1113,18 @@ img{
   bottom:0;
   background-color: var(--background-grey);
   width: 360px;
-  height: 231px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   display:none;
+}
+
+.field-price-show{
+  display:block;
+}
+
+.field-price a{
+  color:inherit;
+  padding:20px;
 }
 
 .list-site-models li:nth-child(2n){
@@ -1140,14 +1132,12 @@ img{
 }
 
 .models h3{
-  font-weight: bold;
   font-size: 18px;
   line-height: 30px;
-  color:var(--basic-black);
   text-transform: uppercase;
   text-align: center;
-  margin:0;
-  padding-top: 26px;
+  margin:10px;
+  padding-top: 16px;
 }
 
 .models h3:hover{
@@ -1168,10 +1158,9 @@ color: var(--button-red);
 }
 
 .button-price{
-  display:inline-block;
+  display:block;
   padding: 17px 75px 15px 72px;
-  margin-left: 80px;
-  margin-top: 0;
+  margin:0 auto 44px;
   border-radius: 3px;
 }
 
@@ -1478,8 +1467,3 @@ color: var(--button-red);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-
-
-/*  outline: 5px solid rgba(0, 255, 0, 0.7);
-    outline-offset: -5px;*/
