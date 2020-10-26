@@ -59,6 +59,13 @@
   --grey-dark: #4D4D4D;
   --grey-toggle: #ABABAB;
   --grey-page-current: #DBDBDB;
+  --black-opacity: rgba(0, 0, 0, 0.15);
+  --white-opacity-03: rgba(255, 255, 255, 0.3);
+  --black-opacity-01: rgba(0, 1, 1, 0.1);
+  --black-opacity-04: rgba(0, 0, 0, 0.4);
+  --black-opacity-025: rgba(0, 1, 1, 0.25);
+  --black-opacity-1: rgba(0, 1, 1, 1);
+  --black-opacity-03: rgba(0, 0, 0, 0.3);
 }
 
 /*Global*/
@@ -79,7 +86,8 @@ img{
   height: auto;
 }
 
-ul{
+.body-page ul,
+.body-inner ul{
   list-style: none;
 }
 
@@ -218,7 +226,7 @@ ul{
 
 .list-site-navigation a:active,
 .container-busket a:active{
-  color:rgba(0, 0, 0, 0.3);
+  color:var(--black-opacity-03);
 }
 
 
@@ -732,7 +740,7 @@ ul{
 
 .button-social:active{
   background-color: var(--button-push-red);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--black-opacity-01);
 }
 
 /*Catalog*/
@@ -826,7 +834,7 @@ ul{
   border: solid 8px var(--white);
   background-color: var(--grey-toggle);
   border-radius: 50%;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 2px 1px var(--black-opacity);
 }
 
 .toggle-min{
@@ -1050,6 +1058,10 @@ ul{
   padding: 10px 3px;
 }
 
+.select-item:last-child a{
+  padding-right: 0;
+}
+
 .select-item a:hover{
   opacity:0.6;
 }
@@ -1088,7 +1100,7 @@ ul{
   position: relative;
   width:360px;
   height:620px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: var(--black-opacity);
   background-image: url("../img/browser.jpg");
   background-position: 0 0;
   background-repeat:no-repeat;
@@ -1105,7 +1117,7 @@ ul{
   background-position: 0 0;
   background-repeat:no-repeat;
   border-radius: 5px;
-  box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
+  box-shadow: 0px 6px 15px var(--black-opacity-025);
 }
 
 .field-price{
@@ -1193,7 +1205,7 @@ color: var(--button-red);
 }
 
 .pagination-item-current a{
-  background: rgba(0, 0, 0, 0.0001);
+  background: var(--white);
   border: 3px solid var(--grey-page-current);
   padding:14px 17px 12px;
 }
@@ -1209,7 +1221,7 @@ color: var(--button-red);
 
 .pagination-item a:active{
   background-color:var(--grey-active);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--black-opacity-01);
   opacity:0.3;
 }
 
@@ -1217,8 +1229,8 @@ color: var(--button-red);
 .pagination-item-current a:focus,
 .pagination-item-current a:active{
   background-color:var(--background-grey);
-  background: rgba(0, 0, 0, 0.0001);
-  box-shadow: inset 0px 0px 0px rgba(0, 1, 1, 1);
+  background: var(--white);
+  box-shadow: inset 0px 0px 0px var(--black-opacity-1);
   opacity:1;
 }
 
@@ -1231,7 +1243,6 @@ color: var(--button-red);
   color:var(--white);
   text-transform:uppercase;
   text-align: center;
-  vertical-align: middle;
   background-color: var(--button-red);
   border: none;
 }
@@ -1247,7 +1258,7 @@ color: var(--button-red);
 /*User buttons*/
 
 .button:active{
-  color:rgba(255, 255, 255, 0.3);
+  color:var(--white-opacity-03);
 }
 
 .slide-button:hover,
@@ -1264,7 +1275,7 @@ color: var(--button-red);
 .contact-button:active,
 .modal-send:active{
   background-color:var(--button-push-red);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--black-opacity-01);
 }
 
 .app-button:hover{
@@ -1295,7 +1306,7 @@ color: var(--button-red);
   width: 960px;
   height: 590px;
   background-color: var(--white);
-  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 20px 40px var(--black-opacity-04);
   display:none;
 }
 .modal-open{
