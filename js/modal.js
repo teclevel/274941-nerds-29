@@ -6,6 +6,20 @@ const userName = letterPopup.querySelector('.user-name');
 const userEmail = letterPopup.querySelector('.user-email');
 const userLetter = letterPopup.querySelector('.user-letter');
 
+var cardSite=document.querySelector('.card-site');
+var fieldPrice=cardSite.querySelector('.field-price');
+
+cardSite.addEventListener('mouseover', function(evt){
+fieldPrice.classList.add('field-price-show');
+console.log("навел мышкой");
+});
+cardSite.addEventListener('mouseout', function(evt){
+fieldPrice.classList.remove('field-price-show');
+console.log("нет мышки");
+});
+
+
+
 let isStorageSupport = true;
 let storage = '';
 
