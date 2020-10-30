@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Интернет магазин Нёрдс</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="body-page">
     <header class="main-header">
@@ -192,25 +192,25 @@
         </section>
       </div>
     </footer>
-      <section class="modal-contact">
-        <h2>Напишите нам</h2>
-        <form class="fill-form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="user-data name">
-            <label for="user-name">Ваше имя:</label>
-            <input class="modal-field user-name" id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
-          </p>
-          <p class="user-data email">
-            <label for="user-email">Ваш email:</label>
-            <input class="modal-field user-email" id="user-email" type="text" name="user-email" placeholder="email@example.com">
-          </p>
-          <p class="textarea">
-            <label for="letter">Текст письма:</label>
-            <textarea class="modal-field user-letter" id="letter" name="letter" placeholder="В свободной форме" rows="4" cols="50"></textarea>
-          </p>
-          <button class="button modal-send" type="submit">Отправить</button>
-          <button class="modal-close" type="button" aria-label="Закрыть"></button>
-        </form>
-      </section>
-      <script src="js/modal.js"></script>
-  </body>
+    <section class="modal-contact">
+      <h2>Напишите нам</h2>
+      <form class="fill-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="user-data name">
+          <label for="user-name">Ваше имя:</label>
+          <input class="modal-field user-name" id="user-name" type="text" name="user-name" placeholder="Имя Фамилия" required>
+        </p>
+        <p class="user-data email">
+          <label for="user-email">Ваш email:</label>
+          <input class="modal-field user-email" id="user-email" type="text" name="user-email" placeholder="email@example.com" required>
+        </p>
+        <p class="textarea">
+          <label for="letter">Текст письма:</label>
+          <textarea class="modal-field user-letter" id="letter" name="letter" placeholder="В свободной форме" rows="4" cols="50" required></textarea>
+        </p>
+        <button class="button modal-send" type="submit">Отправить</button>
+        <button class="modal-close" type="button" aria-label="Закрыть"></button>
+      </form>
+    </section>
+  <script src="js/script.min.js"></script>
+</body>
 </html>

@@ -1,4 +1,4 @@
-/* font roboto*/
+/*font roboto*/
 
 @font-face {
   font-family: "Roboto";
@@ -303,7 +303,6 @@ img{
 .button-slider{
   position: relative;
   padding: 0;
-  display: inline-block;
   height: 18px;
   width: 18px;
   background-color: var(--white);
@@ -648,7 +647,6 @@ img{
 .contact > *{
   margin-left: 50px;
   margin-right: 50px;
-  text-align: left;
 }
 
 .footer-adress{
@@ -1121,8 +1119,8 @@ img{
   display:none;
 }
 
-.field-price-show{
-  display:block;
+.card-site:hover .field-price{
+  display: block;
 }
 
 .field-price a{
@@ -1143,11 +1141,12 @@ img{
   padding-top: 16px;
 }
 
-.models h3:hover{
+.field-price a:hover{
 color: var(--button-red);
 }
 
-.models h3:active{
+.field-price a:active,
+.field-price a:focus{
   color:var(--basic-black);
   opacity: 0.3;
 }
@@ -1263,7 +1262,9 @@ color: var(--button-red);
 .slide-button:active,
 .site-button:active,
 .button-price:active,
+.button-price:focus,
 .contact-button:active,
+.contact-button:focus,
 .modal-send:active{
   background-color:var(--button-push-red);
   box-shadow: inset 0px 3px 0px var(--black-opacity-01);
@@ -1410,7 +1411,7 @@ color: var(--button-red);
   border-color: var(--basic-black);
 }
 
-.name input:invalid{
+.modal-field:invalid{
   border-color:var(--button-hover-red);
 }
 
