@@ -1109,18 +1109,18 @@ img{
   box-shadow: 0px 6px 15px var(--black-opacity-025);
 }
 
+.card-site:hover .field-price{
+  z-index: auto;
+}
+
 .field-price{
   position:absolute;
-  bottom:0;
   background-color: var(--background-grey);
   width: 360px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  display:none;
-}
-
-.card-site:hover .field-price{
-  display: block;
+  bottom:0;
+  z-index:-1;
 }
 
 .field-price a{
