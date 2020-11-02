@@ -1301,9 +1301,11 @@ color: var(--button-red);
   box-shadow: 0px 20px 40px var(--black-opacity-04);
   display:none;
 }
+
 .modal-open{
   display:block;
   animation: bounce 0.6s;
+
 }
 .modal-error {
   animation: shake 0.6s;
@@ -1411,9 +1413,12 @@ color: var(--button-red);
   border-color: var(--basic-black);
 }
 
-.modal-field:invalid{
+.modal-field:invalid,
+.modal-field.invalid{
   border-color:var(--button-hover-red);
 }
+
+
 
 /* Animations */
 
