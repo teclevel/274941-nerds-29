@@ -1098,7 +1098,8 @@ img{
 
 /*Карточка сайта при наведении*/
 
-.card-site:hover{
+.card-site:hover,
+.card-site:focus-within{
   width: 360px;
   height:620px;
   background-color: var(--white);
@@ -1109,7 +1110,8 @@ img{
   box-shadow: 0px 6px 15px var(--black-opacity-025);
 }
 
-.card-site:hover .field-price{
+.card-site:hover .field-price,
+.card-site:focus-within .field-price{
   z-index: auto;
 }
 
